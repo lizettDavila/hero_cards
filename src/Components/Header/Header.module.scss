@@ -1,0 +1,56 @@
+.Header {
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  padding: 20px 40px;
+  height: auto;
+  min-height: 70px;
+  border-bottom: 0.5px solid #e9e9e9;
+  box-shadow: 0px 2px 5px 0px #e9e9e9;
+  background-color: white;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  overflow-y: scroll;
+
+  .Input{
+    width: 100%;
+    max-width: 300px;
+    border-color: var(--red);
+    border-radius: 10px;
+    height: auto;
+    min-height: 40px;
+    span {
+      color: var(--red);
+    }
+  }
+
+  :global {
+    .ant-col:first-child {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--red);
+    }
+    .ant-col:nth-child(2) {
+      text-align: right;
+      font-size: 1rem;
+      padding-top: 5px;
+    }
+    .ant-input-search .ant-input:hover, .ant-input-search .ant-input:focus {
+      border-color: var(--red);
+    }
+    .ant-btn, .ant-btn:hover, .ant-btn:focus {
+      border-color: var(--red);
+      background-color: var(--red);
+      span {
+        color: var(--white)
+      }
+    }
+  }
+
+  @media (max-width: 376px){
+    &{
+      padding: 20px 15px;
+    }
+  }
+}
