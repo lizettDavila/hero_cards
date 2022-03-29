@@ -51,6 +51,26 @@
   @media (max-width: 376px){
     &{
       padding: 20px 15px;
+      :global{
+        .ant-col:first-child {
+          font-size: 1.7rem;
+        }
+        .ant-col:nth-child(2) {
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    :global{
+      .ant-col{
+        text-align: center;
+      }
+      .ant-col:nth-child(2){
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }

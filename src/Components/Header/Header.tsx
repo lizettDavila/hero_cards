@@ -37,8 +37,8 @@ const Header = (props: any) => {
 
   return (
     <Row justify="center" className={styles.Header}>
-      <Col span={12}>HeroPosts</Col>
-      <Col span={12}>
+      <Col xs={24} sm={12}>HeroPosts</Col>
+      <Col xs={24} sm={12}>
         <Search
           defaultValue={author}
           placeholder="Author's name"

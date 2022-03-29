@@ -1,5 +1,5 @@
 .Container {
-  margin-top: 10%;
+  margin-top: 7%;
   .ContainerCards {
     width: 100%;
     margin: 0 auto;
@@ -27,6 +27,17 @@
         border-color: var(--salmon);
         color: var(--red);
       }
+    }
+  }
+
+  @media (max-width: 426px){
+    &{
+      margin-top: 30%;
+    }
+  }
+  @media (max-width: 321px){
+    &{
+      margin-top: 35%;
     }
   }
 }
